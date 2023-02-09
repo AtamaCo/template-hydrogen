@@ -38,7 +38,7 @@
   },
   "prettier": "@shopify/prettier-config",
   "dependencies": {
-    "@atamaco/fetcher-atama": "^5.0.2",
+    "@atamaco/fetcher-atama": "^5.1.0",
     "@atamaco/hydrogen": "^1.1.0",
     "@atamaco/preview-react": "^2.1.0",
     "@atamaco/renderer-react": "^3.0.0",

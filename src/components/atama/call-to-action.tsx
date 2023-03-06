@@ -15,7 +15,7 @@ export function CallToAction({
   atama: object;
 }) {
   const backgroundColors = {
-    gray: 'bg-neutral-300 dark:bg-zinc-900 dark:border-2 dark:border-zinc-800 rounded',
+    gray: 'bg-neutral-300 dark:bg-zinc-900 dark:border-2 dark:border-zinc-700 rounded',
   };
 
   return (
@@ -27,8 +27,8 @@ export function CallToAction({
       {...atama}
     >
       <div className="grid gap-4">
-        <p className="font-bold text-4xl">{title}</p>
-        <p>{description}</p>
+        <p className="font-bold text-3xl">{title}</p>
+        <p className="text-slate-400">{description}</p>
       </div>
       <div className="flex items-center">
         <Button href="#">{buttonText}</Button>

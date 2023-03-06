@@ -26,7 +26,7 @@ export const LandingPage = forwardRef<HTMLDivElement, LandingPageProps>(
     ref,
   ) => {
     return (
-      <div ref={ref} className="max-w-6xl mx-auto grid gap-4">
+      <div ref={ref} className="max-w-6xl mx-auto grid gap-4 mb-4">
         <div data-atama-placement="Top">{top}</div>
         <ThreeColumnsGrid>
           <ThreeColumnsGridItem data-atama-placement="Top Left">

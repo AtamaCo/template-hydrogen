@@ -9,8 +9,6 @@ export function Banner({
   image,
   link,
   bannerTitleColor,
-  bannerSubtitleColor,
-  bannerDescriptionColor,
   atama,
 }: {
   title: string;
@@ -19,36 +17,28 @@ export function Banner({
   buttonText: string;
   image: string;
   link?: string;
-  bannerTitleColor: 'white' | 'black' | 'green' | 'yellow';
-  bannerSubtitleColor: 'white' | 'black' | 'green' | 'yellow';
-  bannerDescriptionColor: 'white' | 'black' | 'green' | 'yellow';
+  bannerTitleColor: 'white' | 'black';
   atama: object;
 }) {
   const colors = {
     white: 'text-white',
     black: 'text-black',
-    green: 'text-green-500',
-    yellow: 'text-yellow-500',
   };
 
   return (
-    <section className="w-full relative py-28 px-8 rounded" {...atama}>
-      <div className="z-10 relative w-full md:w-1/2 flex flex-col justify-center items-start gap-3">
-        <div className="grid gap-4">
-          <h2 className={clsx(colors[bannerSubtitleColor], 'uppercase')}>
-            {subtitle}
-          </h2>
-          <h1 className={clsx(colors[bannerTitleColor], 'uppercase text-4xl')}>
+    <section className="w-full relative py-28 px-8 rounded mb-4" {...atama}>
+      <div className="z-10 relative w-full md:w-1/2 flex flex-col justify-center items-start">
+        <div className="grid gap-4 bg-black/40 p-10">
+          <h2 className="text-sm	text-slate-300 uppercase">{subtitle}</h2>
+          <h1 className={clsx(colors[bannerTitleColor], 'text-4xl font-bold')}>
             {title}
           </h1>
-          <div className={clsx(colors[bannerDescriptionColor])}>
-            {description}
-          </div>
+          <div className="text-slate-300">{description}</div>
           {link && (
             <div>
               <Link
                 to={link}
-                className="uppercase bg-black text-white py-3 px-8 inline-block underline underline-offset-2 text-sm font-semibold"
+                className="bg-yellow-500 text-white py-3 px-6 inline-block text-md font-semibold"
               >
                 {buttonText}
               </Link>

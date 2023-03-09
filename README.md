@@ -1,8 +1,9 @@
-# template-hydrogen
-
+# Hydrogen + Commerce Template for Atama Composer
 This is a demo repository showcasing how to integrate Atama Composer into [Hydrogen](https://shopify.dev/custom-storefronts/hydrogen). The repository is based on the [Hydrogen "demo-store-ts" template](https://github.com/shopify/hydrogen/tree/dist/templates/demo-store-ts).
 
 Hydrogen is a React framework and SDK that you can use to build fast and dynamic Shopify custom storefronts. This repository can be deployed to Vercel and Netlify.
+
+[Atama Docs](https://docs.atama.co/docs/composer-studio/developer-guides/guides/remix)
 
 ## Getting started
 

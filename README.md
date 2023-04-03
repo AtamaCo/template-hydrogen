@@ -1,39 +1,19 @@
 # Hydrogen + Commerce Template for Atama Composer
 This is a demo repository showcasing how to integrate Atama Composer into [Hydrogen](https://shopify.dev/custom-storefronts/hydrogen). The repository is based on the [Hydrogen "demo-store-ts" template](https://github.com/shopify/hydrogen/tree/dist/templates/demo-store-ts).
 
-Hydrogen is a React framework and SDK that you can use to build fast and dynamic Shopify custom storefronts. This repository can be deployed to Vercel and Netlify.
+If you're new to Atama, we recommend you start with our [documentation](https://www.atama.co/docs/getting-started) and using our [quickstart](https://www.atama.co/docs/getting-started/quickstart).
 
-[Atama Docs](https://docs.atama.co/docs/composer-studio/developer-guides/guides/remix)
+## Pre-requisites
 
-## Getting started
-
-**Requirements:**
-
+- [Atama Composer account](https://composer.atama.app/signup)
 - Node.js version 16.14.0 or higher
 - Yarn
 
-## Running the dev server
+## Running locally
 
-Then `cd` into the new directory and run:
+Remember to update `hydrogen.config.js` with your shop's domain and Storefront API token!
 
 ```bash
 npm install
 npm run dev
-```
-
-Remember to update `hydrogen.config.js` with your shop's domain and Storefront API token!
-
-## Building for production
-
-```bash
-npm run build
-```
-
-## Previewing a production build
-
-To run a local preview of your Hydrogen app in an environment similar to Oxygen, build your Hydrogen app and then run `npm run preview`:
-
-```bash
-npm run build
-npm run preview
 ```
